@@ -20,7 +20,7 @@ return fetch(proxyUrl + targetUrl)
 
 class SelectTown extends Component{
   constructor(props){
-    super(props)
+    super(props);
     this.props = {}
   }
 
@@ -39,9 +39,10 @@ class SelectTown extends Component{
   render(){
     return(
           <Select.Async
-           value="one1"
-           options={this.props.options}
-           loadOptions={getOptions}
+            name={this.props.name}
+            value="one1"
+            options={this.props.options}
+            loadOptions={getOptions}
            />
     )
   }
