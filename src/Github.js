@@ -21,11 +21,20 @@ class Github extends Component{
     fetch(urlForUsername(this.props.username))
     .then( response => response.json())
     .then(response =>{
-
       this.setState({
        githubData: response
       })
     })
+    // console.log(this.props.username);
+    // fetch(urlForUsername(this.props.username))
+    // .then(
+    //   d => d.json()) //d.json()
+    // .then(d => {
+    //   console.log(d),
+    //   this.setState({
+    //    githubData: d
+    //  })
+    // })
   }
   render(){
      if(!this.state.githubData ) return <p>Loading...</p>
