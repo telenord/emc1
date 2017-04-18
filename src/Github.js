@@ -5,10 +5,6 @@ const urlForUsername = username =>
   `https://api.github.com/users/${username}`
 
 
-//let url =   `https://api.github.com/users/${this.props.username}`;
-
-
-
 
 class Github extends Component{
   constructor(props){

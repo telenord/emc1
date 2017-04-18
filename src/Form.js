@@ -1,7 +1,5 @@
 import  React, { Component } from 'react';
 
-
-
 let proxyUrl = 'https://cors-anywhere.herokuapp.com/http://emspost.ru/api/rest/?method=ems.';
 
 class Form  extends Component{
@@ -39,7 +37,7 @@ class Form  extends Component{
     fetch(proxyUrl + targetUrl)
       .then((response) => response.json())
       .then((json) => {
-         this.setState ({ price: json.rsp.price });
+         this.setState({ price: json.rsp.price });
       });
   }
 

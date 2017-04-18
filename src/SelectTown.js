@@ -6,7 +6,6 @@ import 'react-select/dist/react-select.css';
 let proxyUrl = 'https://cors-anywhere.herokuapp.com/',
     targetUrl = 'http://emspost.ru/api/rest/?method=ems.get.locations&type=cities&plain=true';
 
-
 const getOptions = (input) => {
 return fetch(proxyUrl + targetUrl)
   .then((response) => {
